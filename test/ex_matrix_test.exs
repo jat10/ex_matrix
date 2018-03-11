@@ -18,6 +18,13 @@ defmodule ExMatrixTest do
   						  }
   end
 
+  test "get values" do
+  	matrix = %{"0" => %{"0" => "1", "1" => "2"},
+  			   "1" => %{"0" => "3", "1" => "4"}
+  			  }
+	assert matrix["0"]["1"] == "2"
+  end
+
   test "example" do
   	matrix = ExMatrix.example("2x2")
   	assert matrix == %{"0" => %{"0" => "(0,0)", "1" => "(0,1)"},
@@ -34,6 +41,7 @@ defmodule ExMatrixTest do
 						   "1" => %{"0" => 3, "1" => 4}
 						  }
   end
+
 
   test "change type of the matrix to string" do
   	matrix = %{"0" => %{"0" => 1, "1" => 2},

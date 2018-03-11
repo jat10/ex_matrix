@@ -1,5 +1,7 @@
 defmodule Helper do
 	require Logger
+
+	@moduledoc false
 	
 	def create_map_matrix(name) do
 		matrix_base(name)
@@ -10,7 +12,6 @@ defmodule Helper do
 	end
 
 	def set_matrix_data(matrix,data) do
-		# [{"(3,3)","10"},{"(0,1)","2"},{"(1,1)","1"}]
 		data
 		|> Enum.reduce(matrix,fn(x,acc) ->
 			position = elem(x,0)
@@ -201,12 +202,4 @@ defmodule Helper do
 			{:error, reason}
 		end
  	end
-
-	def print() do
-		# IO.puts("i \\j     0      1      2      3  ")
-		# IO.puts("0      (0,0)  (0,1)  (0,2)  (0,3)")
-		# IO.puts("1      (1,0)  (1,1)  (1,2)  (1,3)")
-		# IO.puts("2      (2,0)  (2,1)  (2,2)  (2,3)")	
-		# IO.puts("3      (3,0)  (3,1)  (3,2)  (3,3)")				
-	end
 end
