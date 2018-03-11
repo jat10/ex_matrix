@@ -118,5 +118,5 @@ Please read the contribution requirements before start working
 
 Copyright (c) 2018, Jad Tarabay.
 
-ExMatrix source code is licensed under the [MIT License](LICENSE.md).
+ExMatrix source code is licensed under the [MIT License](LICENSE).
 

@@ -3,7 +3,7 @@ defmodule ExMatrix.MixProject do
 
   @version "0.1.0"
   @name "ex_matrix"
-  @maintainer "Jad Tarabay"
+  @maintainers ["Jad Tarabay"]
   @url "https://github.com/jat10/ex_matrix"
 
   def project do
@@ -46,7 +46,7 @@ defmodule ExMatrix.MixProject do
       name: @name,
       # These are the default files included in the package 
       files: ["lib", "mix.exs", "README*", "LICENSE*"], 
-      maintainer: @maintainer, 
+      maintainers: @maintainers, 
       licenses: ["MIT"],
       links: %{"GitHub" => @url}
     ] 
