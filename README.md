@@ -10,7 +10,7 @@ A matrix is a collection of numbers arranged into a fixed number of rows and col
 Here is an example of a `3x2` matrix which means that we have `3 rows` and `2 columns`.
 
 ```  
-     col 1  col 2
+        col 1  col 2
 row 1 |  0      1   |
 row 2 |  2      7   |
 row 3 |  9      0   |
@@ -24,7 +24,7 @@ This is `row 2`
 This is `col 2`
 
 ```
-col 2
+  col 2
 |   1   |
 |   7   |
 |   0   |
@@ -58,7 +58,7 @@ will generate a map that can be used as a matrix
 
 But note that `ExMatrix.create(...)` will generate an empty matrix as you can see in the example
 
-```
+```elixir
   iex> matrix = ExMatrix.create("3x2")
   %{"0" => %{"0" => "", "1" => ""},
     "1" => %{"0" => "", "1" => ""},
@@ -68,7 +68,7 @@ But note that `ExMatrix.create(...)` will generate an empty matrix as you can se
 
 So to fill this matrix with values you can use `ExMatrix.set_matrix(matrix,data)`
 
-```
+```elixir
   matrix = %{"0" => %{"0" => "0", "1" => "1"},
              "1" => %{"0" => "2", "1" => "7"},
              "2" => %{"0" => "9", "1" => "0"}
@@ -96,7 +96,7 @@ You can use `ExMatrix.add_matrices(matrix_1,matrix_2)` or `ExMatrix.sub_matrices
 
 In case that there is something vague please use a helper function
 
-```
+```elixir
   iex> ExMatrix.example("2x2")
   %{"0" => %{"0" => "(0,0)", "1" => "(0,1)"},
     "1" => %{"0" => "(1,0)", "1" => "(1,1)"}
@@ -109,14 +109,10 @@ This library will be extend to have the ability to:
 1. Multiply and Divide two or more matrices
 1. Matrix Transpose
 
-For more information please check the [github](https://github.com/jat10/ex_matrix)
 
 ## For contribution on GitHub
 Please read the contribution requirements before start working
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ex_matrix](https://hexdocs.pm/ex_matrix).
 
 ## Copyright and License
 
