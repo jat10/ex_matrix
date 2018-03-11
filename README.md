@@ -1,5 +1,9 @@
 # ExMatrix
 
+[![Hex.pm](https://img.shields.io/hexpm/v/plug.svg)](https://hex.pm/packages/ex_matrix)
+[![Read the Docs](https://img.shields.io/readthedocs/pip.svg)](https://hexdocs.pm/ex_matrix/ExMatrix.html#content)
+
+
 `ExMatrix` is a new Matrix library for Elixir. This library helps you to create a matrix,
 `manipulate` it with values and `add/subtract` two matrices.
 
